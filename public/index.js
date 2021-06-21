@@ -8,9 +8,7 @@ const newBtn = document.querySelector('#newBtn')
 
 btnSend.addEventListener('click',sendData)
 
-newBtn.addEventListener('click',()=>{
-    
-})
+
 
 
 async function sendData(e){
