@@ -1,4 +1,3 @@
-import statusCode from './statusCode.js'
 
 const btnSend = document.querySelector('#send')
 const select = document.querySelector('select')
