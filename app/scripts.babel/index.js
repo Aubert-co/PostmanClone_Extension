@@ -1,8 +1,9 @@
 'use strict';
 
-
-
-
+import Methods from './methods/methods'
+import ObjectsDom from './ObjectsDom';
+const {MethodPost,MethodGet} =Methods
+const {btnSend,select} = ObjectsDom
 btnSend.addEventListener('click',sendData)
 
 const body =JSON.stringify(InputsValues())
