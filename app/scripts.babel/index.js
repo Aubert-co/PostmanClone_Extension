@@ -46,35 +46,10 @@ function sendData(e){
    
 }
 
-async function MethodGet(){
-  try{
-  
-    const dataGet = await fetch(Url.value,{
-      method:'GET',
-      headers
-    })
-  console.log(GetDatas(dataGet))
-}catch(err){
-  if(err)throw err
-}
-}
 
-async function MethodPost(){
-  try{
-  const response = await fetch(Url.value,{
-    method:'POST',
-    body,
-    headers
-})
 
-const data =await response.json()
-console.log(data)
 
-console.log(GetDatas(response,data))
-  }catch(err){
-    throw err
-  }
-}
+
 
 
 
