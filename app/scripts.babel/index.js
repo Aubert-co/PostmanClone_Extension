@@ -1,21 +1,11 @@
 'use strict';
 
 
-const btnSend = document.querySelector('#send')
-const select = document.querySelector('select')
-const Url = document.querySelector('#url')
-const newBtn = document.querySelector('#newBtn')
 
-const names =[...document.querySelectorAll('.inp')]
-const ke = [...document.querySelectorAll('.inp0')]
-
-const body = JSON.stringify(InputsValues())
-
-const headers = {'Content-Type':'application/json'}
 
 btnSend.addEventListener('click',sendData)
 
-
+const body =JSON.stringify(InputsValues())
 
 function InputsValues (){
  return names.reduce((key,{value},ind)=>{
