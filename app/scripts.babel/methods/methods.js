@@ -1,5 +1,5 @@
 export default {
- MethodPost :async function (){
+ MethodGet :async function (){
     try{
     const response = await fetch(Url.value,{
       method:'POST',
